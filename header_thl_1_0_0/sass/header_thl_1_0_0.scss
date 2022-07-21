@@ -19,6 +19,9 @@
             height: auto;
         }
     }
+    &__right {
+        display: flex;
+    }
     &__nav {
         position: relative;
         display: flex;
@@ -46,10 +49,13 @@
             }
         }
         &>li:hover {
-            background: #063ac4;
+            background: #00a8f0;
         }
     }
     &__help {
+        &:hover {
+            background: #063ac4 !important;
+        }
         button {
             background-color: #fff;
             color: #063ac4;
@@ -74,7 +80,7 @@
         transition: all 0.2s linear;
         opacity: 0;
         visibility: hidden;
-        top: 48px;
+        top: 100%;
         left: 0;
         position: absolute;
         width: 100%;
@@ -157,7 +163,7 @@
             }
         }
         &:hover span {
-            color: #063ac4;
+            color: #00a8f0;
         }
         &:hover img {
             transform: scale(1.1);
@@ -256,6 +262,9 @@
                 background: none;
                 padding: 0;
             }
+            &:hover span {
+                color: #fff;
+            }
         }
         &__location {
             flex-direction: column;
@@ -267,6 +276,9 @@
             &>a>span {
                 position: unset;
                 background: none;
+            }
+            &:hover span {
+                color: #fff;
             }
         }
     }

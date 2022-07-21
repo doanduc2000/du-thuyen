@@ -54,9 +54,10 @@
         display: flex;
         justify-content: center;
         gap: 20px;
+        flex-wrap: wrap;
     }
     &__item {
-        width: 32%;
+        width: 31%;
     }
     &__item:hover &__img {
         img {
