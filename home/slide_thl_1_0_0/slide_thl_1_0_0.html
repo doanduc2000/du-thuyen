@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/slide_thl_1_0_0.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="slide_thl_1_0_0">
+        <div class="slide_thl_1_0_0__slider">
+            <div class="slide_thl_1_0_0__item">
+                <img width="1920" height="480" src="images/slide-duthuyen2.jpg" alt="">
+            </div>
+            <div class="slide_thl_1_0_0__item">
+                <img width="1920" height="480" src="images/slide-duthuyen3.jpg" alt="">
+            </div>
+        </div>
+        <div class="slide_thl_1_0_0__form">
+            <div class="container">
+                <div class="slide_thl_1_0_0__box">
+                    <div class="slide_thl_1_0_0__wrapper">
+                        <input type="text" placeholder="Họ và tên:">
+                        <input type="text" placeholder="Số điện thoại:">
+                        <input type="text" placeholder="Email:">
+                        <button class="slide_thl_1_0_0__btn">Liên hệ ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/lib.min.js"></script>
+<script src="js/tiny-slider-min.js"></script>
+
+<script>
+    var slide_thl_1_0_0__slider = tns({
+        container: '.slide_thl_1_0_0__slider',
+        items: 2,
+        slideBy: 'page',
+        autoplay: 5000,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        lazyload: true,
+        lazyloadSelector: '.tns-lazy',
+        controls: true,
+        navPosition: 'bottom',
+        controlsPosition: 'bottom',
+        nav: false,
+        gutter: 10,
+        responsive: {
+            0: {
+                items: 1,
+            },
+
+        }
+    });
+</script>
+
+</html>

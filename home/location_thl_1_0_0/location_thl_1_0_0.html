@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/location_thl_1_0_0.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="location_thl_1_0_0">
+        <div class="container">
+            <div class="location_thl_1_0_0__header">
+                <img width="50" height="50" src="images/location-icon.svg" alt=""> CÁC ĐIỂM ĐẾN DU THUYỀN HẠ LONG
+                <div class="location_thl_1_0_0__line"></div>
+            </div>
+            <div class="location_thl_1_0_0__box">
+                <div class="location_thl_1_0_0__item">
+                    <img width="650" height="388" src="images/location-titop.jpg" alt="">
+                    <span>Đảo Ti Tốp</span>
+                </div>
+                <div class="location_thl_1_0_0__item">
+                    <img width="650" height="388" src="images/location-titop.jpg" alt="">
+                    <span>Đảo Ti Tốp</span>
+                </div>
+                <div class="location_thl_1_0_0__item">
+                    <img width="650" height="388" src="images/location-titop.jpg" alt="">
+                    <span>Đảo Ti Tốp</span>
+                </div>
+                <div class="location_thl_1_0_0__item">
+                    <img width="650" height="388" src="images/location-titop.jpg" alt="">
+                    <span>Đảo Ti Tốp</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/lib.min.js"></script>
+<script src="js/tiny-slider-min.js"></script>
+<script>
+    var location_thl_1_0_0__box = tns({
+        container: '.location_thl_1_0_0__box',
+        items: 3,
+        slideBy: 'page',
+        autoplay: true,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        lazyload: true,
+        lazyloadSelector: '.tns-lazy',
+        controls: false,
+        navPosition: 'bottom',
+        controlsPosition: 'bottom',
+        nav: true,
+        gutter: 10,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            767: {
+                items: 3
+            },
+
+            913: {
+                items: 4
+            }
+        }
+    });
+</script>
+
+</html>

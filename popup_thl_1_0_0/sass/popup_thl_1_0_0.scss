@@ -1,0 +1,61 @@
+.popup_thl_1_0_0 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    display: none;
+    z-index: 100;
+    &__wrapper {
+        padding: 10px 10px 30px 10px;
+        background: #fff;
+        margin-top: 10vh;
+        max-width: 350px;
+        width: 90%;
+        height: fit-content;
+    }
+    &__close {
+        width: fit-content;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #00ab99;
+        font-weight: 600;
+        margin: 0 0 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px dashed #00ab99;
+    }
+    &__form {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        button {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #fff;
+            background: #00ab99;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    }
+    &__inputGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        input {
+            font-size: 14px;
+            padding: 5px 10px;
+            background: #ddd;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.footer_thl_1_0_0 {
+    background-color: #016166;
+    background-image: linear-gradient(to right, #055458 0%, #038686 20%, #055458 100%);
+    padding: 40px 0;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        font-size: 12px;
+        color: #ccccc6;
+        line-height: 30px;
+    }
+    p {
+        color: #ccccc6;
+        font-size: 13 px
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    &__box-1 {
+        width: 32%;
+    }
+    &__icon {
+        display: flex;
+        gap: 7px;
+    }
+    &__ic {
+        width: 15px;
+    }
+    &__box-2 {
+        width: 32%;
+    }
+    &__des {
+        display: flex;
+    }
+    &__box-2-img {
+        width: 85%;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    &__box-3 {
+        width: 32%;
+    }
+    &__text-1 {
+        span {
+            color: #25ab4b;
+            font-weight: 600;
+        }
+        b {
+            color: #e8b633;
+        }
+    }
+    &__text-2 {
+        width: 47%;
+        ul :hover li {
+            color: #25ab4b;
+        }
+    }
+    &__text-3 {
+        width: 47%;
+        ul :hover li {
+            color: #25ab4b;
+        }
+    }
+    &__text-4 {
+        span {
+            color: #25ab4b;
+            font-weight: 600;
+        }
+    }
+    &__box-3-pic {
+        display: flex;
+        gap: 5px;
+    }
+    &__box-3-img {
+        width: 20%;
+    }
+    @media (max-width: 912px) {
+        &__box-1 {
+            width: 86%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__logo {
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__icon {
+            justify-content: center;
+        }
+        &__box-2,
+        &__box-3 {
+            width: 47%;
+            margin: 0 auto;
+        }
+        &__des {
+            padding: 0 10px;
+            justify-content: space-between;
+        }
+    }
+    @media (max-width: 767px) {
+        padding: 20px 0;
+        &__box-2,
+        &__box-3 {
+            width: 86%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__text-2,
+        &__text-3 {
+            text-align: center;
+        }
+        &__box-2-img {
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+        &__box-3-pic {
+            width: 50%;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+    @media (max-width: 424px) {
+        &__des {
+            padding: 0;
+        }
+    }
+}

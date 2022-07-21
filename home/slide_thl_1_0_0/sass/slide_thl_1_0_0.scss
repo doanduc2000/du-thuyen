@@ -1,0 +1,104 @@
+.slide_thl_1_0_0 {
+    position: relative;
+    background-color: #f9f9f9;
+    &__item {
+        width: 100px;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .tns-outer {
+        position: relative;
+    }
+    .tns-controls {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+    }
+    .tns-controls [aria-controls] {
+        font-size: 40px;
+        padding: 10px;
+        margin: 0;
+        color: #063ac4;
+        font-weight: bold;
+        background: none;
+    }
+    &__form {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    &__box {
+        background-color: rgba(0, 168, 240, 0.8);
+        // background: rgba(6, 58, 196, 0.8);
+        padding: 20px 30px;
+        border-radius: 4px;
+    }
+    &__wrapper {
+        background: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 4px;
+        margin: 0 auto;
+        input {
+            width: 25%;
+            font-size: 14px;
+            border: none;
+            border-bottom: 1px solid #4da981;
+            padding: 0;
+        }
+    }
+    &__btn {
+        background: #063ac4;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 5px 10px;
+        cursor: pointer;
+        width: 25%;
+        max-width: 200px;
+    }
+    @media(max-width:912px) {
+        &__form {
+            position: unset;
+            margin: 20px auto 0;
+            max-width: 500px;
+        }
+        &__box {
+            background-color: rgb(0, 168, 240);
+            padding: 20px;
+        }
+        &__wrapper {
+            padding: 0;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+            background-color: rgb(0, 168, 240);
+            input {
+                padding: 5px 10px;
+                width: 100%;
+            }
+        }
+        &__btn {
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+    @media(max-width: 767px) {
+        max-width: 428px;
+        margin: 0 auto;
+    }
+    @media(max-width: 320px) {
+        &__box {
+            padding: 15px
+        }
+    }
+}
