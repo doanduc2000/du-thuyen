@@ -197,7 +197,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="header_thl_1_0_0__help"> <button id="popup-btn"> Liên hệ giá tốt</button> </li>
+                            <li class="header_thl_1_0_0__help"> <button class="popup-btn"> Liên hệ giá tốt</button> </li>
 
                         </ul>
                     </div>
@@ -581,6 +581,10 @@
                     <img width="650" height="388" src="home/location_thl_1_0_0/images/location-titop.jpg" alt="">
                     <span>Đảo Ti Tốp</span>
                 </div>
+                <div class="location_thl_1_0_0__item">
+                    <img width="650" height="388" src="home/location_thl_1_0_0/images/location-titop.jpg" alt="">
+                    <span>Đảo Ti Tốp</span>
+                </div>
             </div>
         </div>
     </section>
@@ -646,6 +650,20 @@
             </div>
             <div class="news_thl_1_0_0__btn">
                 <a class="moreBtn">Xem Tất Cả Tin Tức »</a>
+            </div>
+        </div>
+    </section>
+    <link rel="stylesheet" href="home/advise_thl_1_0_0/css/advise_thl_1_0_0.css">
+    <section class="advise_thl_1_0_0">
+        <div class="container">
+            <div class="advise_thl_1_0_0__box">
+                <div class="advise_thl_1_0_0__left">
+                    <div class="advise_thl_1_0_0__title"> Tư Vấn Chuyên Nghiệp với Giá Tốt Nhất. <b>Hỗ Trợ 24/7:</b> <span>0916 999 668</span> </div>
+                    <p>Chúng tôi tự hào là những chuyên gia trong các tour <b>Du Thuyền Hạ Long</b> . Với đội ngũ team giàu kinh nghiệm, nhiệt huyết, tư vấn chuyên nghiệp. Chúng tôi tự tin mang lại cho bạn những chuyến đi tuyệt vời nhất!</p>
+                </div>
+                <div class="advise_thl_1_0_0__right">
+                    <button class="popup-btn">Đặt du thuyền giá tốt nhất</button>
+                </div>
             </div>
         </div>
     </section>
@@ -829,14 +847,15 @@
     <section class="popup_thl_1_0_0" id="popup_thl_1_0_0">
         <div class="popup_thl_1_0_0__wrapper">
             <div class="popup_thl_1_0_0__close" id="popup-close"><img width="30" height="30" src="popup_thl_1_0_0/images/popup-close.svg" alt=""></div>
-            <div class="popup_thl_1_0_0__title">Liên hệ với chúng tôi ngay</div>
+            <div class="popup_thl_1_0_0__title"> <span>Cam kết giá luôn tốt nhất -</span> 0123 456 789</div>
+            <div class="popup_thl_1_0_0__sub">Yêu cầu (Sẽ được xử lý & phản hổi nhanh nhất)</div>
             <div class="popup_thl_1_0_0__form">
+                <textarea placeholder="Nhập yêu cầu:" cols="30" rows="10"></textarea>
                 <div class="popup_thl_1_0_0__inputGroup">
                     <input type="text" placeholder="Họ và tên:">
                     <input type="text" placeholder="Số điện thoại:">
-                    <input type="text" placeholder="Email:">
                 </div>
-                <button>Liên hệ ngay</button>
+                <button>Gửi yêu cầu giá tốt</button>
             </div>
         </div>
     </section>
@@ -882,48 +901,16 @@
 </script>
 <!--Popup regist-->
 <script>
-    document.getElementById('popup-btn').addEventListener('click', () => {
-        document.getElementById('popup_thl_1_0_0').style.display = 'flex'
-    })
+    const popUp = document.getElementsByClassName('popup-btn')
+    for (let i = 0; i < popUp.length; i++) {
+        popUp[i].addEventListener('click', () => {
+            document.getElementById('popup_thl_1_0_0').style.display = 'flex'
+        })
+    }
     document.getElementById('popup-close').addEventListener('click', () => {
         document.getElementById('popup_thl_1_0_0').style.display = 'none'
     })
 </script>
-<!--SeeMore-->
-<script>
-    const ship = [{
-        id: '0',
-        img: 'home/sale_thl_1_0_0/images/sale-duthuyen.jpg',
-        name: 'Du thuyền Sea Stars',
-        released: '2022',
-        room: 20,
-        cost: '4,067,000',
-        promo: '3tr.xxx'
-    }, {
-        id: '1',
-        img: 'home/sale_thl_1_0_0/images/sale-duthuyen.jpg',
-        name: 'Du thuyền Sea Stars',
-        released: '2022',
-        room: 20,
-        cost: '4,067,000',
-        promo: '3tr.xxx'
-    }, {
-        id: '2',
-        img: 'home/sale_thl_1_0_0/images/sale-duthuyen.jpg',
-        name: 'Du thuyền Sea Stars',
-        released: '2022',
-        room: 20,
-        cost: '4,067,000',
-        promo: '3tr.xxx'
-    }, {
-        id: '3',
-        img: 'home/sale_thl_1_0_0/images/sale-duthuyen.jpg',
-        name: 'Du thuyền Sea Stars',
-        released: '2022',
-        room: 20,
-        cost: '4,067,000',
-        promo: '3tr.xxx'
-    }]
-</script>
+
 
 </html>
