@@ -10,6 +10,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 10px;
+        position: relative;
     }
     &__logo {
         img {
@@ -57,12 +58,17 @@
             background: #063ac4 !important;
         }
         button {
-            background-color: #fff;
+            background: #e5e7eb;
             color: #063ac4;
             border: none;
             border-radius: 20px;
             padding: 5px 10px;
             cursor: pointer;
+            transition: all 0.2s linear;
+            &:hover {
+                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+                background: #fff;
+            }
         }
     }
     &__drop {
@@ -85,8 +91,10 @@
         position: absolute;
         width: 100%;
         background: #00a8f0;
-        ;
         padding: 15px;
+        br {
+            display: none;
+        }
     }
     &__dropMore {
         display: flex;
@@ -194,11 +202,35 @@
     @media(max-width: 1180px) {
         padding: 5px 0;
         &__menuBtn {
-            display: flex;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
             cursor: pointer;
+            width: 30px;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
         }
         &__box {
             display: none;
+        }
+        &__logo {
+            img {
+                margin: 0 auto;
+            }
+        }
+        &__wrapper {
+            display: block;
+        }
+        &__flag {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
         &__bg {
             background: rgba(0, 0, 0, 0.7);
@@ -232,6 +264,12 @@
             flex-direction: column;
             &>li {
                 gap: 10px;
+                transition: none;
+            }
+        }
+        &__help {
+            button {
+                width: 100%;
             }
         }
         &__dropdown {
@@ -247,6 +285,9 @@
         &__drop {
             flex-direction: column;
             align-items: unset !important;
+            span {
+                justify-content: space-between;
+            }
             &:hover .header_thl_1_0_0__dropdown {
                 display: block;
             }
