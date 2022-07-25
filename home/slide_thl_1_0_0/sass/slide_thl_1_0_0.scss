@@ -36,7 +36,6 @@
     }
     &__box {
         background-color: rgba(0, 168, 240, 0.8);
-        // background: rgba(6, 58, 196, 0.8);
         padding: 20px 30px;
         border-radius: 4px;
     }
@@ -51,7 +50,6 @@
         input {
             width: 25%;
             font-size: 14px;
-            border: none;
             border-bottom: 1px solid #063ac4;
             padding: 0;
         }
@@ -90,6 +88,7 @@
             input {
                 padding: 5px 10px;
                 width: 100%;
+                border: none;
             }
         }
         &__btn {
