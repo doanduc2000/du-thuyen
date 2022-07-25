@@ -42,18 +42,18 @@
 }
 
 @media (max-width:414px) {
+    .newOther_thl_1_0_0__tt {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:320px) {
     .newOther_thl_1_0_0__pic {
         width: 100%;
     }
     .newOther_thl_1_0_0__pic img {
         width: 100%;
         height: auto;
-        margin: 0;
-    }
-    .newOther_thl_1_0_0 li {
-        width: 48%;
-    }
-    .newOther_thl_1_0_0__tt {
-        font-size: 14px;
+        display: block;
     }
 }
