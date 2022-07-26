@@ -138,14 +138,18 @@
         color: #FFF;
         background: #063ac4;
     }
-    @media(max-width:767px) {
-        .moreBtn {
-            font-size: 12px;
-            padding: 5px 20px;
+    @media(max-width:1180px) {
+        &__text {
+            flex-direction: column;
+            align-items: flex-end;
         }
     }
     @media(max-width: 767px) {
         padding: 20px 0;
+        .moreBtn {
+            font-size: 12px;
+            padding: 5px 20px;
+        }
         &__header {
             font-size: 17px;
         }
