@@ -44,6 +44,10 @@
             transition: all 0.2s linear;
             a {
                 color: #fff;
+                transition: all 0.2s linear;
+                &:hover {
+                    color: #063ac4
+                }
             }
             img {
                 display: block;
@@ -108,6 +112,7 @@
             display: block;
             position: relative;
             overflow: hidden;
+            height: 100px;
             img {
                 width: 100%;
                 height: auto;
@@ -154,6 +159,7 @@
             display: block;
             position: relative;
             overflow: hidden;
+            height: 140px;
             img {
                 width: 100%;
                 height: auto;
