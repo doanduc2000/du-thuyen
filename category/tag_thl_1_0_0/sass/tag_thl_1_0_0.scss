@@ -1,18 +1,20 @@
 .tag_thl_1_0_0 {
-    margin-bottom: 5px;
     span {
         display: block;
         font-weight: 600;
+        margin-bottom: 10px;
+        text-transform: uppercase;
     }
     a {
+        margin-bottom: 5px;
         display: block;
         width: fit-content;
         background: #f79323;
         color: #fff;
         text-decoration: none;
-        padding: 3px 10px;
+        padding: 3px 5px;
         border-radius: 5px;
-        font-size: 13px;
+        font-size: 12px;
         transition: all 0.2s linear;
         &:hover {
             background: #d68121;
