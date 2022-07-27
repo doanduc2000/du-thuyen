@@ -1,9 +1,11 @@
 .tag_thl_1_0_0 {
     span {
-        display: block;
+        display: flex;
+        align-items: center;
         font-weight: 600;
         margin-bottom: 10px;
         text-transform: uppercase;
+        gap: 5px
     }
     a {
         margin-bottom: 5px;

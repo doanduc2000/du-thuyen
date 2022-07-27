@@ -141,7 +141,7 @@
             }
         }
         &__title {
-            font-size: 13px;
+            font-size: 15px;
         }
         &__box {
             margin-bottom: 10px;
@@ -151,12 +151,12 @@
         }
         &__textGroup {
             width: 60%;
-            p:nth-child(3) {
+            p {
                 display: none;
             }
         }
         &__sub {
-            font-size: 13px;
+            font-size: 15px;
         }
     }
     @media(max-width: 280px) {
