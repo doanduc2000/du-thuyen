@@ -10,6 +10,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 10px;
+        position: relative;
     }
     &__logo {
         img {
@@ -18,6 +19,9 @@
             max-width: 180px;
             height: auto;
         }
+    }
+    &__right {
+        display: flex;
     }
     &__nav {
         position: relative;
@@ -40,23 +44,35 @@
             transition: all 0.2s linear;
             a {
                 color: #fff;
+                transition: all 0.2s linear;
+                &:hover {
+                    color: #063ac4
+                }
             }
             img {
                 display: block;
             }
         }
         &>li:hover {
-            background: #063ac4;
+            background: #00a8f0;
         }
     }
     &__help {
+        &:hover {
+            background: #063ac4 !important;
+        }
         button {
-            background-color: #fff;
+            background: #e5e7eb;
             color: #063ac4;
             border: none;
             border-radius: 20px;
             padding: 5px 10px;
             cursor: pointer;
+            transition: all 0.2s linear;
+            &:hover {
+                box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+                background: #fff;
+            }
         }
     }
     &__drop {
@@ -74,13 +90,15 @@
         transition: all 0.2s linear;
         opacity: 0;
         visibility: hidden;
-        top: 48px;
+        top: 100%;
         left: 0;
         position: absolute;
         width: 100%;
         background: #00a8f0;
-        ;
         padding: 15px;
+        br {
+            display: none;
+        }
     }
     &__dropMore {
         display: flex;
@@ -94,6 +112,7 @@
             display: block;
             position: relative;
             overflow: hidden;
+            height: 100px;
             img {
                 width: 100%;
                 height: auto;
@@ -140,6 +159,7 @@
             display: block;
             position: relative;
             overflow: hidden;
+            height: 140px;
             img {
                 width: 100%;
                 height: auto;
@@ -157,7 +177,7 @@
             }
         }
         &:hover span {
-            color: #063ac4;
+            color: #00a8f0;
         }
         &:hover img {
             transform: scale(1.1);
@@ -188,11 +208,35 @@
     @media(max-width: 1180px) {
         padding: 5px 0;
         &__menuBtn {
-            display: flex;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
             cursor: pointer;
+            width: 30px;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
         }
         &__box {
             display: none;
+        }
+        &__logo {
+            img {
+                margin: 0 auto;
+            }
+        }
+        &__wrapper {
+            display: block;
+        }
+        &__flag {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
         &__bg {
             background: rgba(0, 0, 0, 0.7);
@@ -226,6 +270,12 @@
             flex-direction: column;
             &>li {
                 gap: 10px;
+                transition: none;
+            }
+        }
+        &__help {
+            button {
+                width: 100%;
             }
         }
         &__dropdown {
@@ -241,6 +291,9 @@
         &__drop {
             flex-direction: column;
             align-items: unset !important;
+            span {
+                justify-content: space-between;
+            }
             &:hover .header_thl_1_0_0__dropdown {
                 display: block;
             }
@@ -256,6 +309,9 @@
                 background: none;
                 padding: 0;
             }
+            &:hover span {
+                color: #fff;
+            }
         }
         &__location {
             flex-direction: column;
@@ -267,6 +323,9 @@
             &>a>span {
                 position: unset;
                 background: none;
+            }
+            &:hover span {
+                color: #fff;
             }
         }
     }

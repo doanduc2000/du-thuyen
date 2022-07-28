@@ -1,0 +1,18 @@
+.tag_thl_1_0_2 {
+    margin-bottom: 5px;
+    span {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    a {
+        display: inline-block;
+        background: #dde5e7;
+        text-decoration: none;
+        padding: 3px 5px;
+        font-size: 12px;
+        transition: all 0.2s linear;
+        border-radius: 3px;
+    }
+}

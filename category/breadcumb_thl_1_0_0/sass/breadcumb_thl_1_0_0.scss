@@ -1,0 +1,21 @@
+.breadcumb_thl_1_0_0 {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    padding: 10px;
+    margin: 20px 0;
+    background: #eceaeb;
+    p {
+        margin: 0;
+    }
+    span {
+        color: #333;
+    }
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+    @media(max-width: 767px) {
+        margin: 20px 0 0;
+    }
+}
