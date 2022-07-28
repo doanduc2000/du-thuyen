@@ -59,6 +59,14 @@
         &__body {
             width: 75%;
         }
+        &__title {
+            font-size: 17px;
+        }
+        &__tt {
+            a {
+                font-size: 14px;
+            }
+        }
     }
     @media(max-width:320px) {
         .newOther_thl_1_0_0__pic {

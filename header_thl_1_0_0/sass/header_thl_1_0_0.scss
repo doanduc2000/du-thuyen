@@ -207,6 +207,16 @@
     }
     @media(max-width: 1180px) {
         padding: 5px 0;
+        &__category1 {
+            a {
+                height: unset;
+            }
+        }
+        &__category2 {
+            a {
+                height: unset;
+            }
+        }
         &__menuBtn {
             display: block;
             position: absolute;
