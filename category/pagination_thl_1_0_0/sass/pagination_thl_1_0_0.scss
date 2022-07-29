@@ -1,0 +1,29 @@
+.pagination_thl_1_0_0 {
+    text-align: center;
+    padding-bottom: 20px;
+    .page_nav {
+        padding-left: 0
+    }
+    .wp-pagenavi {
+        display: flex;
+        justify-content: center;
+        .pages {
+            margin: 0 20px 0 0;
+            line-height: 30px
+        }
+        .current,
+        a:hover {
+            background: #063ac4;
+            color: #fff
+        }
+        .current,
+        a {
+            border: 1px solid #063ac4;
+            width: 30px;
+            height: 30px;
+            display: block;
+            line-height: 30px;
+            margin: 0 5px;
+        }
+    }
+}

@@ -11,9 +11,9 @@
             border-left: 1px solid #ccc;
             border-right: 1px solid #ccc;
             border-bottom: 1px solid #ccc;
-            border-top: 1px solid #fe9500;
+            border-top: 1px solid #063ac4;
             li::marker {
-                color: #fe9500;
+                color: #063ac4;
             }
         }
     }
@@ -25,14 +25,20 @@
             padding-bottom: 10px;
         }
         &Img {
-            padding-right: 10px;
-            width: 90;
+            margin-right: 10px;
+            width: 35%;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
         }
         &Title {
             font-size: 15px;
-            width: 60%;
+            width: 65%;
             flex: 1;
             margin: 0;
+            font-size: 14px;
         }
     }
     &__adv {
@@ -59,19 +65,7 @@
     }
 }
 
-@media (max-width:1024px) {
-    .sidebar_thl_1_0_2 {
-        &__adv {
-            top: 90px;
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-    }
-}
-
-@media (max-width:768px) {
+@media (max-width:1023px) {
     .sidebar_thl_1_0_2 {
         display: none;
     }
