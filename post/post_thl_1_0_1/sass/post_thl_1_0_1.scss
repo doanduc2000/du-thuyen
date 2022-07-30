@@ -44,6 +44,8 @@
         }
     }
     &__other {
+        padding: 15px;
+        border: 1px solid #e1dede;
         ul {
             margin: 5px 0;
             padding-left: 20px;
@@ -51,6 +53,24 @@
             span {
                 font-size: 12px;
                 color: #8d8d8d;
+            }
+        }
+    }
+    @media(max-width: 767px) {
+        &__new {
+            margin-top: 10px;
+        }
+        &__img {
+            width: 30%;
+        }
+        &__text {
+            width: 70%;
+            span {
+                font-size: 14px;
+                margin: 0;
+            }
+            p {
+                display: none;
             }
         }
     }
