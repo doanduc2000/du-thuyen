@@ -56,10 +56,12 @@
             }
         }
     }
-    @media(max-width: 767px) {
+    @media(max-width:912px) {
         &__new {
             margin-top: 10px;
         }
+    }
+    @media(max-width: 767px) {
         &__img {
             width: 30%;
         }
