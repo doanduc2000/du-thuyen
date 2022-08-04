@@ -3,6 +3,7 @@
     background: #F9F9F9;
     &__box {
         display: flex;
+        display: -webkit-flex;
         gap: 20px;
         align-items: center;
         justify-content: space-between;

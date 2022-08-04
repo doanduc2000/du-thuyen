@@ -6,6 +6,7 @@
             margin: 0;
             padding: 10px 5px 10px 25px;
             display: flex;
+            display: -webkit-flex;
             flex-direction: column;
             gap: 5px;
             border-left: 1px solid #ccc;

@@ -24,12 +24,14 @@
     &__box {
         display: flex;
         justify-content: center;
+        display: -webkit-flex;
         gap: 20px;
         flex-wrap: wrap;
     }
     &__item {
         width: 48%;
         display: flex;
+        display: -webkit-flex;
         gap: 10px;
     }
     &__img {

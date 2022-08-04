@@ -23,6 +23,7 @@
     }
     &__box {
         display: flex;
+        display: -webkit-flex;
         gap: 20px;
     }
     &__item {

@@ -51,11 +51,13 @@
     &__other {
         width: 55%;
         display: flex;
+        display: -webkit-flex;
         gap: 10px;
         flex-direction: column;
     }
     &__item {
         display: flex;
+        display: -webkit-flex;
         gap: 10px;
     }
     &__img {
@@ -128,6 +130,7 @@
         }
         &__hot {
             display: flex;
+            display: -webkit-flex;
             gap: 10px;
             img {
                 width: 40%;

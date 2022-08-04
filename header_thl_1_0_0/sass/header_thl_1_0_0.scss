@@ -7,6 +7,7 @@
     background: #063ac4;
     &__wrapper {
         display: flex;
+        display: -webkit-flex;
         align-items: center;
         justify-content: space-between;
         gap: 10px;
@@ -38,6 +39,7 @@
             padding: 10px 10px;
             cursor: pointer;
             display: flex;
+            display: -webkit-flex;
             align-items: center;
             align-self: stretch;
             gap: 5px;
@@ -78,6 +80,7 @@
     &__drop {
         span {
             display: flex;
+            display: -webkit-flex;
             align-items: center;
             gap: 5px;
         }
@@ -102,6 +105,7 @@
     }
     &__dropMore {
         display: flex;
+        display: -webkit-flex;
         gap: 15px;
         justify-content: center;
         flex-wrap: wrap;
@@ -138,6 +142,7 @@
     }
     &__location {
         display: flex;
+        display: -webkit-flex;
         gap: 10px;
         justify-content: center;
         &Box {
@@ -148,6 +153,7 @@
                 padding: 0;
                 text-transform: none;
                 display: flex;
+                display: -webkit-flex;
                 flex-direction: column;
                 gap: 5px;
             }
@@ -185,6 +191,7 @@
     }
     &__flag {
         display: flex;
+        display: -webkit-flex;
         color: #fff;
         font-weight: 600;
         gap: 5px;

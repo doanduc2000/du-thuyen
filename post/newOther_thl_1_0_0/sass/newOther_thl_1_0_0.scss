@@ -26,11 +26,13 @@
         list-style: none;
         padding-left: 0;
         display: flex;
+        display: -webkit-flex;
         flex-direction: column;
         gap: 10px;
     }
     li {
         display: flex;
+        display: -webkit-flex;
         flex-wrap: wrap;
         gap: 10px;
     }

@@ -53,6 +53,7 @@
     &__box {
         display: flex;
         justify-content: center;
+        display: -webkit-flex;
         gap: 20px;
         flex-wrap: wrap;
     }
@@ -103,23 +104,27 @@
         background: #fff;
         padding: 10px;
         display: flex;
+        display: -webkit-flex;
         flex-direction: column;
         gap: 5px;
         font-size: 12px;
     }
     &__info {
         display: flex;
+        display: -webkit-flex;
         gap: 10px;
         align-items: center;
     }
     &__time {
         display: flex;
+        display: -webkit-flex;
         align-items: center;
         gap: 3px;
     }
     &__cost {
         display: flex;
         align-items: center;
+        display: -webkit-flex;
         gap: 3px;
         del {
             font-weight: 600;
@@ -136,6 +141,7 @@
         width: fit-content;
         margin-left: auto;
         display: flex;
+        display: -webkit-flex;
         align-items: center;
         gap: 5px;
     }
