@@ -37,6 +37,7 @@
     }
     &__form {
         display: flex;
+        display: -webkit-flex;
         flex-direction: column;
         gap: 10px;
         textArea,
@@ -62,6 +63,7 @@
     }
     &__inputGroup {
         display: flex;
+        display: -webkit-flex;
         gap: 10px
     }
     @media(max-width: 767px) {
