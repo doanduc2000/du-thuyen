@@ -115,13 +115,6 @@
             margin-right: 5px;
         }
     }
-    &__ovBanner {
-        img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-    }
     &__promo {
         margin-top: 20px;
         &Title {
@@ -456,6 +449,13 @@
         }
     }
     @media(max-width: 767px) {
+        &__ovBanner {
+            span {
+                bottom: 10px;
+                right: 20px;
+                left: unset;
+            }
+        }
         &__header {
             margin: 10px 0;
             display: block;
@@ -471,6 +471,12 @@
         }
         &__ovText {
             flex-direction: column;
+        }
+        &__ovItLeft {
+            width: 100%;
+        }
+        &__ovItRight {
+            display: none;
         }
         &__promo {
             margin-top: 10px;
