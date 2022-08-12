@@ -1,6 +1,14 @@
 .post_thl_1_0_3 {
     background: #f1f1f1;
-    padding: 40px 0;
+    padding: 20px 0;
+    &__banner {
+        margin-bottom: 20px;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
     &__header {
         margin-bottom: 20px;
         padding-bottom: 10px;
@@ -58,6 +66,44 @@
             color: red;
         }
     }
+    &__ovBanner {
+        display: flex;
+        position: relative;
+        span {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: all 0.2s linear;
+            &:hover {
+                color: #00a8f0;
+            }
+        }
+    }
+    &__ovItLeft {
+        margin-right: 10px;
+        width: 72%;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__ovItRight {
+        width: 35%;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
     &__commit {
         margin-right: 10px;
         display: flex;
@@ -81,7 +127,7 @@
         &Title {
             font-size: 22px;
             font-weight: 600;
-            color: red;
+            color: #cf1515;
             display: flex;
             align-items: center;
             padding-bottom: 10px;
@@ -113,7 +159,6 @@
                     top: 2px;
                     width: 16px;
                     height: 16px;
-                    color: red;
                 }
             }
         }
@@ -412,7 +457,7 @@
     }
     @media(max-width: 767px) {
         &__header {
-            margin-bottom: 10px;
+            margin: 10px 0;
             display: block;
         }
         &__title {
