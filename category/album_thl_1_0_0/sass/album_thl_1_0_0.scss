@@ -1,0 +1,76 @@
+.album_thl_1_0_0 {
+    &__bg {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 10;
+    }
+    &__box {
+        max-width: 930px;
+        width: 90%;
+        margin: 0 auto;
+        position: fixed;
+        left: 50%;
+        top: 10vh;
+        transform: translateX(-50%);
+        z-index: 11;
+    }
+    &__close {
+        width: fit-content;
+        margin-left: auto;
+        margin-bottom: 5px;
+        cursor: pointer;
+        img {
+            width: 25px;
+            height: auto;
+            display: block;
+        }
+    }
+    &__main {
+        width: 95%;
+        margin: 0 auto;
+        img {
+            width: 95%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    p {
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    &__control {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        top: 50%;
+        transform: translateY(-50%);
+        button {
+            background: rgba(255, 255, 255, 0.6);
+            border: none;
+            border-radius: 50%;
+            padding: 0;
+            display: inline-flex;
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.2s linear;
+            cursor: pointer;
+            img {
+                width: 15px;
+                height: 15px;
+            }
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+}

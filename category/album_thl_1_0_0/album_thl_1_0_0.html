@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://huudinh.github.io/media/css/style-min.css">
+    <link rel="stylesheet" href="css/album_thl_1_0_0.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="openAlbum">Mở</button>
+</body>
+<script>
+    const albumModal =
+        `<section class="album_thl_1_0_0" id="album_thl_1_0_0">
+        <div class="album_thl_1_0_0__box">
+            <div class="album_thl_1_0_0__close" id="closeAlbum">
+                <img width="20" height="20" src="images/album-close.svg" alt="">
+            </div>
+            <div class="album_thl_1_0_0__main">
+                <img width="952" height="511" src="images/album-1.jpg" alt="">
+            </div>
+            <p> Ảnh 1/10</p>
+            <div class="album_thl_1_0_0__control">
+                <button>
+                    <img width="20" height="20" src="images/album-left.svg" alt="">
+                </button>
+                <button>
+                    <img width="20" height="20" src="images/album-right.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="album_thl_1_0_0__bg"></div>
+    </section>`
+
+
+
+    document.getElementById('openAlbum').addEventListener('click', () => {
+        document.getElementsByTagName('body')[0].insertAdjacentHTML("afterbegin", albumModal)
+        document.getElementById('closeAlbum').addEventListener('click', () => {
+            document.getElementById('album_thl_1_0_0').remove()
+        })
+    })
+</script>
+
+</html>
