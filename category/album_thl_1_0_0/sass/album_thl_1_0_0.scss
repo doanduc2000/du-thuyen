@@ -32,32 +32,20 @@
         margin: 10px 20px 20px 20px;
         overflow: auto;
         height: 70vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
     }
     &__item {
-        width: 48%;
-        margin-right: 15px;
+        width: 100%;
         margin-bottom: 15px;
         img {
             display: block;
             width: 100%;
             height: auto;
         }
-        &:nth-child(2n) {
-            margin-right: 0;
-        }
     }
     @media(max-width: 767px) {
         max-width: 428px;
         &__main {
-            margin: 5px 10px 10px 10px;
-        }
-        &__item {
-            width: 100%;
-            margin-right: 0;
-            margin-bottom: 10px;
+            margin: 5px 15px 15px 15px;
         }
     }
 }
