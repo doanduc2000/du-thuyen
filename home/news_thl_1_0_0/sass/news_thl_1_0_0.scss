@@ -117,6 +117,14 @@
         }
         &__other {
             width: 100%;
+            gap: 0;
+        }
+        &__item {
+            gap: 0;
+            margin-bottom: 10px;
+        }
+        &__img {
+            margin-right: 10px;
         }
     }
     @media(max-width: 767px) {
@@ -130,10 +138,11 @@
         }
         &__hot {
             display: flex;
-            display: -webkit-flex;
-            gap: 10px;
+            align-items: flex-start;
+            margin-bottom: 10px;
             img {
                 width: 40%;
+                margin-right: 10px;
             }
         }
         &__text {
@@ -148,6 +157,7 @@
         }
         &__box {
             margin-bottom: 10px;
+            gap: 0;
         }
         &__img {
             width: 40%;
