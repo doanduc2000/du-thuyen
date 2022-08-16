@@ -94,7 +94,6 @@
         margin-bottom: 10px;
         display: flex;
         align-items: center;
-        display: -webkit-flex;
         gap: 10px;
         span {
             position: relative;
@@ -178,6 +177,20 @@
         }
     }
     @media(max-width: 767px) {
+        &__item {
+            ul {
+                gap: 0;
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &__about {
+            gap: 0;
+        }
+        &__time {
+            margin-right: 10px;
+        }
         &__item {
             padding: 10px;
         }
