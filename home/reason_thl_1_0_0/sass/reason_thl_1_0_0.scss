@@ -72,11 +72,12 @@
             font-size: 17px;
         }
         &__box {
-            gap: 10px;
+            gap: 0px;
         }
         &__item {
             width: 100%;
             flex-direction: row;
+            margin-bottom: 10px;
         }
         &__img {
             display: none;

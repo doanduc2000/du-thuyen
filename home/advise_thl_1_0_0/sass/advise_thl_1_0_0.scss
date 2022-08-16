@@ -56,6 +56,7 @@
     @media(max-width: 767px) {
         &__box {
             flex-direction: column;
+            gap: 0;
         }
         &__left {
             width: 100%;
