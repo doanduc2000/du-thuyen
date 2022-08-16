@@ -56,9 +56,18 @@
     }
     @media(max-width: 767px) {
         padding: 20px 0;
+        &__header {
+            font-size: 17px;
+        }
         &__box {
             flex-direction: column;
-            gap: 45px;
+            gap: 0;
+        }
+        &__item {
+            margin-bottom: 45px;
+            &:last-child {
+                margin: 0;
+            }
         }
     }
 }
