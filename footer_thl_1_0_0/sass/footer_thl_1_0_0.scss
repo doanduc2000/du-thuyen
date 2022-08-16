@@ -110,10 +110,19 @@
     }
     @media (max-width: 767px) {
         padding: 20px 0;
+        &__box {
+            gap: 0;
+        }
+        &__box-1 {
+            margin-bottom: 10px;
+        }
         &__box-2,
         &__box-3 {
             width: 100%;
             margin: 0 auto;
+        }
+        &__box-2 {
+            margin-bottom: 15px;
         }
         &__box-2-img {
             width: 70%;
@@ -128,9 +137,8 @@
             font-size: 13px;
         }
     }
-    @media (max-width: 424px) {
-        &__des {
-            padding: 0;
-        }
+    &__des {
+        padding: 0;
+        margin-bottom: 10px;
     }
 }
