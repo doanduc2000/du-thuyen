@@ -24,18 +24,20 @@
     &__box {
         display: flex;
         justify-content: center;
-        display: -webkit-flex;
-        gap: 20px;
         flex-wrap: wrap;
     }
     &__item {
         width: 48%;
         display: flex;
-        display: -webkit-flex;
-        gap: 10px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
     }
     &__img {
         width: 30%;
+        margin-right: 10px;
         img {
             display: block;
             width: 100%;
@@ -61,6 +63,7 @@
         }
         &__img {
             width: 100%;
+            margin-bottom: 5px;
         }
         &__text {
             width: 100%;

@@ -23,12 +23,15 @@
     }
     &__box {
         display: flex;
-        gap: 20px;
     }
     &__item {
         position: relative;
+        margin-right: 20px;
         transition: ease-in 0.4s;
         cursor: pointer;
+        &:last-child {
+            margin-right: 0;
+        }
         img {
             width: 100%;
             height: auto;
