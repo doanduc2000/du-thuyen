@@ -13,7 +13,7 @@
     }
     p {
         color: #ccccc6;
-        font-size: 13 px
+        font-size: 13px
     }
     img {
         width: 100%;
@@ -23,21 +23,22 @@
         display: flex;
         display: -webkit-flex;
         flex-wrap: wrap;
-        gap: 15px;
     }
     &__box-1 {
         width: 32%;
+        margin-right: 15px;
     }
     &__icon {
         display: flex;
         display: -webkit-flex;
-        gap: 7px;
     }
     &__ic {
         width: 15px;
+        margin-right: 7px;
     }
     &__box-2 {
         width: 32%;
+        margin-right: 15px;
     }
     &__des {
         display: flex;
